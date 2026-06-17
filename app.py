@@ -228,7 +228,7 @@ with tab1:
         status_df = status_distribution(df)
         if not status_df.empty:
             fig_pie = px.pie(
-                status_df, names="status", values="count",
+                status_df, names="status", values="orders",
                 color_discrete_sequence=["#0F3460", "#E94560", "#16213E", "#A8D8EA"],
                 hole=0.5,
             )
